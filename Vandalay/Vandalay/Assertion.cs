@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace Vandalay
 {
-    class Program
+    public class Assertion
     {
-        static void Main(string[] args)
-        {
 
-        }
     }
 }
