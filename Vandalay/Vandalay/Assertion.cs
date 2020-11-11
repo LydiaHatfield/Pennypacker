@@ -6,6 +6,6 @@ namespace Vandalay
 {
     public class Assertion
     {
-
+        public bool MajorityBelief { get; set; }
     }
 }
