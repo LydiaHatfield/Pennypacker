@@ -6,22 +6,14 @@ namespace Vandalay
 {
     public class Person
     {
-        public bool DoYouBelieveThisToBeA()
+        public virtual bool DoYouBelieveThisToBeA()
         {
-            throw new NotImplementedException();
+            return true;
         }
 
-        public bool AMajorityBelieveThisToBe()
+        public virtual bool DoYouBelieveThisToBeC(bool publicOpinion)
         {
-            throw new NotImplementedException();
+            return false;
         }
-
-        public bool DoYouBelieveThisToBeC(bool publicOpinion)
-        {
-            throw new NotImplementedException();
-        }
-
-
     }
-
 }
