@@ -1,0 +1,13 @@
+C:\Users\lydia\Desktop\py4e\Pennypacker\Vandalay\Vandalay\bin\Debug\netcoreapp3.1\Vandalay.exe
+C:\Users\lydia\Desktop\py4e\Pennypacker\Vandalay\Vandalay\bin\Debug\netcoreapp3.1\Vandalay.deps.json
+C:\Users\lydia\Desktop\py4e\Pennypacker\Vandalay\Vandalay\bin\Debug\netcoreapp3.1\Vandalay.runtimeconfig.json
+C:\Users\lydia\Desktop\py4e\Pennypacker\Vandalay\Vandalay\bin\Debug\netcoreapp3.1\Vandalay.runtimeconfig.dev.json
+C:\Users\lydia\Desktop\py4e\Pennypacker\Vandalay\Vandalay\bin\Debug\netcoreapp3.1\Vandalay.dll
+C:\Users\lydia\Desktop\py4e\Pennypacker\Vandalay\Vandalay\bin\Debug\netcoreapp3.1\Vandalay.pdb
+C:\Users\lydia\Desktop\py4e\Pennypacker\Vandalay\Vandalay\obj\Debug\netcoreapp3.1\Vandalay.csprojAssemblyReference.cache
+C:\Users\lydia\Desktop\py4e\Pennypacker\Vandalay\Vandalay\obj\Debug\netcoreapp3.1\Vandalay.AssemblyInfoInputs.cache
+C:\Users\lydia\Desktop\py4e\Pennypacker\Vandalay\Vandalay\obj\Debug\netcoreapp3.1\Vandalay.AssemblyInfo.cs
+C:\Users\lydia\Desktop\py4e\Pennypacker\Vandalay\Vandalay\obj\Debug\netcoreapp3.1\Vandalay.csproj.CoreCompileInputs.cache
+C:\Users\lydia\Desktop\py4e\Pennypacker\Vandalay\Vandalay\obj\Debug\netcoreapp3.1\Vandalay.dll
+C:\Users\lydia\Desktop\py4e\Pennypacker\Vandalay\Vandalay\obj\Debug\netcoreapp3.1\Vandalay.pdb
+C:\Users\lydia\Desktop\py4e\Pennypacker\Vandalay\Vandalay\obj\Debug\netcoreapp3.1\Vandalay.genruntimeconfig.cache

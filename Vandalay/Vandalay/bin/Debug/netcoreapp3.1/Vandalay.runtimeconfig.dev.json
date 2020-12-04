@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\lydia\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\lydia\\.nuget\\packages"
+    ]
+  }
+}
