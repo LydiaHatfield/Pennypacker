@@ -7,6 +7,7 @@ import { ArchivesComponent } from './archives/archives.component';
 import { AuthorsComponent } from './authors/authors.component';
 import { ContactComponent } from './contact/contact.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AppRoutingModule } from './app-routing.module';
     DashboardComponent,
     ArchivesComponent,
     AuthorsComponent,
-    ContactComponent
+    ContactComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
