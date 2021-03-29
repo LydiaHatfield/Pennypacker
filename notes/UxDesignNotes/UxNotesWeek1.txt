@@ -1,0 +1,121 @@
+Google UX Design Certification 
+Week 1 Foundations of UX	
+
+History
+-UX Designers make products easier and more enjoyable to use
+-Don Norma 1990's coined the term User Experience
+-Dates back to fengshui
+
+Course Outline
+-Foundations
+-Start the UX Design Process
+-Build Wireframes and Low-fi Prototypes
+-Conduct UX research
+-Create High Fidelity desgigns in Figma
+-Responsive web design in Adobe XD
+-Design a UX for Social Good and prepare for jobs portfolio
+
+UX
+-UX: How a person, the user, feels about interacting with a product. 
+	A user-centered approach to solving a design problem.
+-Product: Good, service or feature
+
+Good Experience
+-Usable (ease/clarity)
+-Enjoyable (positive connction) requires research
+-Equitable (all users)
+-Useful (solves our problem)
+
+Skills/Responsibilities
+-Visuals
+-Curious about people's thoughts
+-Empathetic
+-Resourceful
+-Research
+-Wireframes
+-Prototyping
+-Create info architecture
+-communicate
+
+UX Design Roles
+-Interaction Designer: experience and function. Business goal + user
+-Visual Designer: thinks about what its like to move through a product, smooth transitions
+-UX Researcher: 
+-UX Writers: 
+-Production Designer/UX Program Manager: Project manager equivilant
+-UX Engineer: translate designs intent into a functioning equivilant
+
+Production Development Lifecycle
+-1. Brainstorm
+-2. Define
+-3. Design 
+-4. Test
+-5. Launch
+
+Good User Experience
+-Norman Door: poorly designed products that dont consider user needs
+-Intuitive: ties an emotion to the product use
+-Ramsian Doctrine: good design is a little design as possible
+	-Inclusive
+	-Function
+	-Desireable
+-Considerate creativity
+-Partnership between voice and vehickle of expression
+-Passes for common sense
+-Nothing superficial 
+-Simplicity and versitility
+-Feedback turns into action
+
+Equity Focused Design
+-Uplifts excluded groups
+-Universal Design: One size fits all is not effective
+-Inclusive Design: solve for one, extend to many: most ppl still left out
+-Equality: Same amount
+-Equity: Different levels of support for better outcomes
+
+Triangulation
+-Date collection --> Data Analysis --> Compare findings <-- Date collection <-- Data Analysis
+-If more data is needed, return to field 
+
+Frameworks
+-User Centered Design Process
+	-Understand users experience
+	-Specifty user needs research)
+	-Design Solution
+	-Evaluate (compare to user needs)
+	-1. Design for user needs
+	-2. Make Copy conversational
+	-3. Present info clearly
+	-4. Acknowledge user actions
+	-5. Offer Support
+	
+-5 Elements design process
+	-Strategy
+	-Scope
+	-Sctucture
+	-Skeleton
+	-Surface
+	
+-Design Thinking Product	
+	-1. Empathize
+	-2. Define
+	-3. Ideate
+	-4. Prototypes
+	-5. Test
+	
+-Lean UX Design Process
+	-Think
+	-Make
+	-Check
+	-Move forward, stay curious, test IRL, externalize ideas, reframe deliverables as outcomes, enbrace radical transparency
+	
+-Double Diamond Design Process
+	-Focus on user, communicate, collaborate, iterate
+	-(discover)Research(define)/(develop) Design (deliver)
+	
+
+
+
+
+
+

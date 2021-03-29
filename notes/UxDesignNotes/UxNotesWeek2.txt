@@ -1,0 +1,57 @@
+Google UX Design Course
+Week 2 Terms/Tools/Framework
+
+Equity Focused Design
+-Uplifts excluded groups
+-Universal Design: One size fits all is not effective
+-Inclusive Design: solve for one, extend to many: most ppl still left out
+-Equality: Same amount
+-Equity: Different levels of support for better outcomes
+
+Triangulation
+-Date collection --> Data Analysis --> Compare findings <-- Date collection <-- Data Analysis
+-If more data is needed, return to field 
+
+Frameworks
+-User Centered Design Process
+	-Understand users experience
+	-Specifty user needs research)
+	-Design Solution
+	-Evaluate (compare to user needs)
+	-1. Design for user needs
+	-2. Make Copy conversational
+	-3. Present info clearly
+	-4. Acknowledge user actions
+	-5. Offer Support
+	
+-5 Elements design process
+	-Strategy
+	-Scope
+	-Sctucture
+	-Skeleton
+	-Surface
+	
+-Design Thinking Product	
+	-1. Empathize
+	-2. Define
+	-3. Ideate
+	-4. Prototypes
+	-5. Test
+	
+-Lean UX Design Process
+	-Think
+	-Make
+	-Check
+	-Move forward, stay curious, test IRL, externalize ideas, reframe deliverables as outcomes, enbrace radical transparency
+	
+-Double Diamond Design Process
+	-Focus on user, communicate, collaborate, iterate
+	-(discover)Research(define)/(develop) Design (deliver)
+	
+
+Platforms
+
+Next Billion Users
+
+
+
