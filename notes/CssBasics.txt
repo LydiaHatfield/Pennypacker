@@ -1,0 +1,179 @@
+CSS Basics
+
+Summary:
+The syntax and structure of CSS rules
+
+How conflicts are handled
+
+The three ways to use CSS in an HTML document – inline styles, style blocks, and external style sheets
+
+
+CSS preprocessors
+
+The critical rendering path – the DOM, CSSOM, and render tree
+
+CSS a language for specifying how an HTML document is displayed. 
+"cascading" refers to the heirarchy of multiple overlapping selectors. 
+In the event of a conflict the most specific selector wins. 
+
+1996 W3C published the CSS standard, a powerful tool for styling HTML docs
+
+Style sheet consists of rules.
+Rules target HTML elements using selectors that descrie the elements to which the styles sould e applies.
+
+Rule Syntax
+
+A rule consists of a selector followed by a block of CSS properties contained inside curly braces. 
+
+The properties consist of a property and value separated by a colon and are delimited with semicolons. 
+
+A value may be a single value or a collection of multiple values, depending on the property.
+
+Every element in the document that is matched by the selector has the properties in the CSS rule applied to it.
+
+.header {
+  background-color: red;
+  border: 1px solid blue;
+  }
+  
+This rule targets any element with the class header.
+
+Property Conflicts 
+
+If the same property is used more than once in a given rule the last definition in the rule wins.
+
+CSS chooses the most specific selector and the most recent (last) property in a rule.
+
+/*Comments*/
+
+At-Rule
+@ is a special CSS rule that acts as a directive controlling the behavior of CSS.
+Things like @charset (defines the character encoding used) or @import (imports contents of another style sheet)
+
+In-line
+Inline styles are specified as CSS properties in the value of the style attribute.
+no selectors or curly braces, only css properties
+applies to a single element and always takes precedence
+<div style="background-color: red;">
+  Hello world!
+</div>
+
+Style Block
+Rules specified inside a style sheet within the HTML doc by adding CSS rules inside a style element.
+Added to the document's head element
+Full style sheet with selectors and rules
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>Hello world!</div>
+  </body>
+</html>
+
+External Style Sheets
+
+Rules listed in a style sheet file with a .css extention.
+Style sheet is then referenced in the head of the HTML document using a link element
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/path/to/file.css">
+  </head>
+  <body>
+    <div>Hello world!</div>
+  </body>
+</html>
+
+Example of simple external CSS file
+div {
+  background-color: red;
+}
+
+Browser Support
+More recent browser versions tend to use experimental feature flags rather than vendor prefixes. 
+These are special configuration flags that are exposed in an advanced configuration interface where experimental features can be turned on and off.
+
+Web Resources
+
+caniuse.com (for finding browser support for a given feature)
+Mozilla Developer Network (exhaustive reference to all CSS properties)
+
+CSS Preprocessors
+Sass, LESS, Stylus
+Takes your style sheet and converts them to plain CSS, ready to use in the browser
+Supports Nested rules, variables and mixins, which CSS does not.
+
+The Document Object Model (DOM)
+
+Data structure in the browser. 
+Tree of DOM nodules created by reading and parsing the HTML elements in the document and their structure and hierarchy.
+
+CSS Object Model (CSSOM)
+tree structure that represents the hierarchy of styles in the document
+The browser parses the CSS (which blocks the rendering of the page) and creates the CSSOM
+
+The Render Tree
+DOM and CSSOM are combined to form the render tree
+
+Layout and Paint
+This stage of the process looks at styles such as width, height, position, margin, and padding, to determine each element's size and location on the page. 
+nothing is actually shown on screen yet.
+Once layout is complete, the browser can begin painting by applying styles such as color and font to determine the actual pixels to draw on the screen.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

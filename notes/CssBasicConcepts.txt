@@ -1,0 +1,333 @@
+CSS Basic Concepts
+
+The Box Model
+4 parts outside to inside are margin, border, padding, content
+-All elements are represented by a rectangular box with content, padding, border, and margin.
+	Margin- space between an elements border and its surrounding elements
+	Border- outline around the box thickness, style, color etc
+	Padding- space between the elements border and the content itself
+	Content- in the center of the box
+Most elements have no default padding, border or margin
+Button elements come with default stlying
+Example of two simple div elements:
+	<style>
+  #div1 {
+    background-color: red;
+  }
+  #div2 {
+    background-color: green;
+  }
+  div {
+    color: white;
+  }
+</style>
+<div id="div1">Hello world!</div>
+<div id="div2">Hello world!</div>
+	
+Example of two simple div elements with margin, border and padding added:
+<style>
+  #div1 {
+    background-color: red;
+  }
+  #div2 {
+    background-color: green;
+  }
+  div {
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    border: 2px solid black;
+  }
+</style>
+<div id="div1">Hello world!</div>
+<div id="div2">Hello world!</div>
+
+Box Sizing:
+	size of an element is specified with the width and height properties. 
+	interpretation depends on the value of the box-sizing property . 
+	This property supports two values, content-box and border-box.
+
+Content-box is the default where only width and height properties are default content area of the box only
+.box {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border: 2px solid red;
+}
+ actual width and height taken up by the element’s box is the sum of the specified width and height (the content box)
+ the padding on each side, and the border width on each side.
+
+Border-box: the values of the width and height properties are treated as 
+the size of the content box plus the padding and border width.
+setting box-sizing to border-box
+
+
+-3 main types of elements: block, inline, and inline-block.
+Some HTML elements are block elements (e.g., div) and some are inline elements (e.g., span). 
+An element’s type can be changed by setting the display property to block, inline, or inline-block.
+
+Block Elements:
+always appear on its own line and take up full width of containing element
+	unless explicitly set with the height and width property
+
+Example div elements in a block element: inner elements have no explicit width set, so they take up the full width of the container element. 
+no explicit height set, so they only take up enough vertical space to fit the text content.
+<style>
+  .container {
+    width: 350px;
+    border: 2px solid black;
+  }
+  .box1 {
+    background-color: skyblue;
+  }
+  .box2 {
+    background-color: lime;
+  }
+</style>
+<div class="container">
+  <div class="box1">Hello</div>
+  <div class="box2">World</div>
+</div>
+
+Inline Elements:
+inline element is rendered inside the normal flow of text. 
+only take up enough width and height as necessary to contain their content. 
+Padding:	
+	*Setting the width or height properties of an inline element will have no effect. 
+	*setting left and right padding will behave as expected
+Margins: 
+	*extra space is made for the horizontal margins but not the vertical ones.
+
+Example of linline span element with horizontal padding set
+<style>
+  .container {
+    width: 300px;
+  }
+  .highlight {
+    background-color: yellow;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+</style>
+<div class="container">
+  Hello <span class="highlight">world</span>, I am demonstrating an inline element.
+</div>
+
+Inline-Block Elements:
+Combination of inline and block
+* An inline-block element flows with the text like an inline element, 
+but the width and height properties are respected, as are the vertical padding and margin.
+Example of an element in an inline-block element given explicit width.
+*The span element does not break onto a new line – 
+it flows with the text like an inline element.
+its width and height properties are respected, as is the vertical padding. 
+Extra space is made to account for the padding – 
+it doesn’t bleed over into the surrounding content like with an inline element.
+<style>
+  .container {
+    width: 300px;
+  }
+  .highlight {
+    background-color: yellow;
+    display: inline-block;
+    width: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+</style>
+<div class="container">
+  Hello <span class="highlight">world</span>, I am demonstrating an inline-block element.
+</div>
+
+-units for CSS values:
+	-px 
+		should be avoided except in media queries and when setting the document’s base font size.
+		"logical pixel" corresponds to a certain number of phyiscal device pixels
+		*accessability issue for zooming in
+		*The base font size is set by applying the font-size property to the root html element.
+	-em is relative to the element’s font size.
+		Example of em unit used for padding
+		 header element has a font size of 24px. The padding is specified as 0.5em, or half of the element’s font size. 
+		 Therefore, the padding applied to this element will be 12px.
+		.header {
+		font-size: 24px;
+		padding: 0.5em;
+		}
+		Exampl of em unit relative font size
+		.header {
+		font-size: 24px;
+		padding: 0.5em;
+		}
+		.header li {
+		font-size: 0.75em;
+		}
+		.header li a {
+		font-size: 0.5em;
+		}
+	-rem is relative to the document’s base font size.
+		"root em" 
+		if the base font size is 16px, a size of 1rem is equal to 16px.
+		1.5rem would be 16px.  
+		16px*1.5=24x	
+		good choice for layout properties since the size 1rem remains constant thrhoughout the document’s
+		zoom resizes nicely, no cascading effect because they are proportional
+	-Viewport Units
+		
+		area of the page that is currently visible in your web browser
+		vw(viewport width), vh(viewport height) are 1% of the viewport size in that direction
+		vmin, and vmax are relative when the viewport size is resized, these adjust accordingly
+			*good choice for responsive design
+	-Percentage: unit relative to the size of another value
+	-No Units: some property values take no unit like opacity
+		flexbox properties like glex-grow and flex-shrink exxpect integer numbers without units
+	-Other Units: Absolute units like cm, mm, in, pt
+		used for print style sheets but rarely seen in screen style sheets
+		*1h unit is relative to the element's line height but is not supported by any browser
+
+Functions
+
+-calc function is used to compute CSS values by performing calculations with multiple values, 
+	potentially mixed units.
+	works with CSS custom properties or variables
+	calc(1.5rem - 10px)
+	can establish a standard unit of spacing for a doc as a variable 
+	reference later in call to the cal function or var
+	:root {
+	--spacing: 0.5rem
+	}
+	.container {
+	padding: calc(var(--spacing) * 2);
+	}
+
+
+Colors 
+	-can be defined in several ways.
+	-many pre definined color values 
+	For a full list:
+	https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
+	-Hexadecimal RGB: #FF0000
+	-rgb function: rgb(255, 0, 0)
+	-Alpha value: RBG colors specify alpha value to determine opacity 0(fully transparent)-1(fully opaque)
+		pure red with 50% opacity is rgba (255, 0, 0, 0.5)
+	-hsl function: hue, saturation, and lightness values
+		hsl(90, 50%, 25%) 
+		Color with a hue of 120 degrees, a saturation of 50% and a lightness of 50% would be specified as hsl(120, 50%, 50%).
+		hsla = hsl function with added alpha function
+			hsla(120, 50%, 50%, 0.75)
+	-transparent is a CSS keyword used to apply no color as with overlapping images
+		background color of most elements defaults to transparent
+	-newer color syntax: rgb/rgba and hsl/hsla functions used for older browsers
+		*-no commas between numbers, alpha is added with a slash
+			Old syntax: rgba(255, 0, 0, 0.5)
+			New syntax: rgb(255 0 0 / 0.5)
+			Not supported in internet explorer
+			
+Overflow
+	-If an element’s content cannot fit inside of it, the content will overflow.
+	<style>
+		.container {
+			background-color: skyblue;
+			height: 2rem;
+			width: 10rem;
+		}
+		</style>
+		<div class="container">
+		This is some really long text that will overflow the container.
+		</div>
+	-This content only overflows vertically. 
+	-Default behavior is to wrap the text to the next line.
+	-Explicit height means the container will not grow vertically to fit
+	-Overflow handling can be changed with the both horizontal and verticle property overflow
+	-or individually with overflow-x, and overflow-y properties.
+	-white-space property set to nowrap causes horizontal overflow
+	-Default value is visible 
+	-Hidden overflow property clips overflow content by the bounds of the containing element
+	-scroll overflow property provides scrollbars for overflow text reguardless of overflow-x
+	-auto overflow property similar to scroll except the scroll bars only appear when overflow exists
+
+Variables (CSS custom properties)
+	-create variables for project specific styles like brand-color for easy later changes
+	-not compatible with internet explorer 
+	-A variable is declared with two leading slashes: --var-name.
+		--brand-color: #3FA2D9;
+	-A variable is used by passing it through the var function: 
+		background-color: var(--brand-color);
+	-var fuction takes an optional second fallback argument value if variable isnt defined
+		background-color: var(--brand-color, #3FA2D9);
+	-Variable values can be declared on any element or pseudo-element
+		then the variables cascade down to descendant elements (inherited)
+	-example of inheriting a parent's variable
+<style>
+  .container {
+    --heading-color: blue;
+    font-family: Arial, sans-serif;
+  }
+  .container h1 {
+    color: var(--heading-color);
+  }
+</style>
+<div class="container">
+  <h1>Welcome</h1>
+</div>
+	-Global variable applies to the entire document 
+		set using special :root selector
+<style>
+  :root {
+    --text-color: red;
+  }
+  .container {
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+  }
+</style>
+<div class="container">Hello World!</div>
+	-variables can reference other variables 
+		<style>
+  :root {
+    --primary-border-color: red;
+    --primary-border-style: solid;
+    --primary-border-width: 3px;
+    --primary-border:
+      var(--primary-border-width)
+      var(--primary-border-style)
+      var(--primary-border-color);
+  }
+  .container {
+    border: var(--primary-border);
+    width: 10rem;
+  }
+</style>
+<div class="container">Hello World!</div>
+	-Reference variables in the calc function 
+	We set two variables: an explicit row height of 1.5rem and a visible row count of 3. 
+	The container should be as high as three rows, so in the .container rule, 
+	we use calc to multiply the --row-height variable by the --visible-rows variable, 
+	which will yield exactly the correct height.
+
+	We also apply overflow: auto, which hides the overflow and makes it scrollable.
+	-Example using variables for layout
+	<style>
+  :root {
+    --row-height: 1.5rem;
+    --visible-rows: 3;
+  }
+  .container {
+    border: 1px solid red;
+    height: calc(var(--row-height) * var(--visible-rows));
+    overflow: auto;
+    width: 10rem;
+  }
+  .row {
+    line-height: var(--row-height);
+  }
+</style>
+<div class="container">
+  <div class="row">Row one</div>
+  <div class="row">Row two</div>
+  <div class="row">Row three</div>
+  <div class="row">Row four</div>
+  <div class="row">Row five</div>
+  <div class="row">Row six</div>
+</div>
