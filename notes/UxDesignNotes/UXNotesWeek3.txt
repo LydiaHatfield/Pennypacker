@@ -1,0 +1,48 @@
+Google UX Design Certificate 
+Week 3: Design Sprints
+
+
+Design Sprint: a time-bound process with 5 phases used to solve a critical design challenge through designing, prototyping, and testing ideas with users. 
+	Uses
+		-use design sprints to answer questions 
+		-define product directions 
+		-figure out cross-team strategies
+		-build team culture
+		-great for design challenge with many potential solutions 
+		-great for design challenge that requires people from cross-functional teams to weigh in 
+		-great for design challenge with wide scope
+		-getting started is more important that being right
+		-assumptions are ok
+		-we're probably wrong the first time
+	
+	Phases
+		-understand: time to help participants understand the design challenge
+			learn from experts and engage in creative discussions across teams
+			use cases, user research findings, competitor benchmarking
+			user interviews, customer journey mapping, needs and motivations
+			How We Might? (HWM) exercise
+			Value proposition
+			Brand definition
+		-ideate: brainstorm creative solutions
+			converged as a team to discuss individual HMWs
+			create affinity map by grouping into different categories
+			crazy 8's sketching
+			user test script writing
+		-decide
+			team pitches
+			dot voting
+		-prototype
+			
+		-test
+
+Importance of design sprints
+-offers specific instructions on how to work together as a team and make strategic decisions  
+-process forces efficient decisions to keep forward momentum
+
+Plan a design sprint
+ice breakers
+
+ideal team size 4-7 ppl
+Entry-leventry-level UX designer's role in a sprint
+
+Importance of retrospectives
