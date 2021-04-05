@@ -1,0 +1,183 @@
+Joe Attardi 2020
+J. AttardiModern CSS
+https://doi.org/10.1007/978-1-4842-6294-8_4
+
+CSS Chapter 5
+Backgrounds and Gradients
+
+Any HTML element can have a background: image, solid color, gradient etc
+
+Solid Background Colors: 
+	-applied using background-colors property
+	-any valid CSS color expression
+
+Background Images: 
+	-1 or more applied by the background-image property
+	-accepts 1 or more image URLs with url function
+		-take 1 argument, string 
+			Absolute URL: url('https://imgur.com/my-image.png');
+			Relative URL: url('/header.png');
+				background-image: url('tiles.jpg');
+	-stacked with first image on top
+	-repeat
+		default- image repeated to fill the element
+		change with background-repeat property
+			background-repeat: no-repeat;
+			if not filling the entire element background color, if any, will show through
+		image can be repeated just horizontally or just vertically
+			specify background-repeat of repeat-x or repeat-y
+			background-repeat: repeat-y;
+		
+Background Position
+	-background-position property
+		background-position: center;
+	-single value: top,  bottom, left, 50px, %
+	-two values: first x then y
+		background-position: 50px center;
+
+Background-size
+	-default: original size
+	-change with bacground-size property
+	.header-image {
+		background-image: url('mountains.jpg');
+		background-repeat: no-repeat;
+		height: 15rem;
+		border: 3px solid #000000;
+	}
+	-cover property
+		resizes the background image to fill the element
+		if aspect ratio of image doesn't match element, image will be cropped
+		fix by combining background-position property with background-size
+			set to position to center to focus on the center of image
+				background-size: cover;
+				background-position: center;
+	-contain:resizes background image to fit in element
+		must preserve aspect ratio
+
+Background-clip
+	-default, element’s background goes behind its border, padding, and content. 
+		add some padding to the image, and change the border
+		 .header-image {
+    background-image: url('mountains.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 15rem;
+    border: 5px dashed #000000;
+    padding: 2rem;
+  }
+	-change with backgound-clip property
+		Properties:
+			border-box: background extends to border
+			padding-box: background does not extend behind the border
+			content-box: background shown only behind content area
+			background: shorthand property sets several properties in single value
+				-can include background color
+				-values in any order with few exceptions
+				-background-size must come directly after background-position, seperated by slash
+				-background color must come last
+					.header-image {
+				background: url('mountains.jpg') center / cover;
+				height: 15rem;
+				border: 3px solid #000000;
+  }
+ 
+Gradients
+	-natively supported by browsers
+	-treated as images, no CSS property
+	-specified as functions in the background-image property
+	-linear gradients
+		gradually transition between colors along a straight linear
+		takes multiple color transitions called stops
+		example: simplest possible linear gradient	
+		background-image: linear-gradient(red,blue);
+		default top to bottom, stops evenly distributed
+		-adding stops
+			background-image: linear-gradient(
+				red,
+				blue,
+				green
+				);
+		-transparency
+			background-imageL linear-gradient (
+				transparent,
+				blue,
+				transparent
+				);
+		-changing direction
+			to change gradient direction, add argument in the format
+				to <direction> at the beginning of function
+				example of horizontal gradient from left to right:
+					backgroud-image: linear-gradient (
+							to right,
+							red,
+							blue
+							);
+		-specify arbitrary angle
+				background-image: linear-gradient (
+					45deg,
+					red,
+					blue
+					);
+		-custom stops
+			specify perentage after color stops
+				background-image: linear-gradient(
+					to right,
+					red 0%,
+					blue 25%
+					);
+			two adjoining stops  with same color creates a region of solid color
+				background-image: linear-gradient(
+					to right, 
+					red 0%
+					green 25%,
+					green 75%,
+					blue 100%
+					);
+			first stop after 0% or last stop before 100%, remaining space efore or after will be solid
+			
+	-radial gradients: start at center point and radiate outward
+			background-image: radial-gradient(red,blue);
+		-shape and position: can be circle or defaults to eilpse 
+		-custom shape and position	
+			defined as name of shape and a position, top, right center, etc in percentage or values
+				<shape> at <position>
+				position can be omitted, default to center
+				Example: center of the circle is at the 25% mark along horizontal axis
+				backgrond-image: radial-gradient {
+					circle at 25%, 
+					red,
+					blue
+					);
+		-custom size modifiers
+			closest-side: ends at side closest to center of gradient. wide rectangle, top or bottom
+			farthest-size: ens at side farthest from center. wide rectangle left or right
+			cloest-corner: gradient ends closest corner to center
+			*default: farthest-corner: ends farthest corner fromc enter 
+			
+		-color stops: can table multiple
+			background-image; radial-gradient(
+				red,
+				blue,
+				green 75%
+				);
+				
+			multiple gradients:
+			background-image: radial-gradient(
+				ellipse at 25%,
+				red, transparent
+				), radial-gradient(
+				ellie at 75%. 
+				blue,
+				transparent
+				);
+		-combining backgrounds
+			light and shadow effects 
+			background-image:
+				radial-gradiet(
+					ellipse at top left;
+					white 25%. 
+					transparent
+					);
+					url ('mountains.jpg');
+				
+				

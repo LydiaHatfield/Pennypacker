@@ -1,0 +1,87 @@
+Css Selectors
+
+A selector determines which elements a CSS rule applies to. 
+Several ways an element can be targeted with a selector.
+Selectors can target multiple elements on the page. Single CSS rule can apply multiple elemnts.
+Element or class selector can select multiple elements that have that class or element name.
+
+An element will have the properties from all applicable CSS rules applied to it.
+
+Basic selector types
+
+-Universal
+* matches all elements. 
+specified as single selector, to select all elements in the doc, or with combinators
+
+* {
+  margin: 0;
+}
+
+-Element
+tag name
+targets an HTML element by its tag name. syntax of the selector is the name of the element.
+this will apply a margin to all div elements
+
+p {
+  margin: 25px;
+}
+
+-ID
+# followed by the id value 
+HTML elements can have an id attribute. only one element with a given id. 
+multiple elements with the same id should be avoided.
+the element with an id attribute whose value is header will recieve 25px of padding.
+If you need to apply a stlye to more than one element, you can use class selectors inead of ID selectors.
+
+#header {
+  padding: 25px;
+}
+
+-Class
+.followed by the name of the class
+HTML element can have a class attribute.
+class used to mark all elements of a related type
+Any numbr of HTML elements can have the same class attribute. 
+AND a single HTML element can have any number of classes applied to it. 
+seperated by space in the value of the class attribute
+
+.nav-link {
+  color: darkcyan;
+}
+
+Class selector will match every element in the doc with the given class. 
+
+-Attribute
+[]
+several forms
+[name] selects all elements that have the given attribute, regardless of value
+
+[name="value"] selects all elements that have the given attribute, whose value is the string "value"
+
+[name~="value"] selects all elements that have the gien attribute, whose alue contains the string "value"
+seperated by whitespace. here are two HTML elements with slightly different title attributes.
+
+<div title="Hello World">Hello World</div>
+<div title="HelloWorld">HelloWorld</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

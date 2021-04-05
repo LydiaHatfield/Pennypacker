@@ -1,0 +1,138 @@
+Joe Attardi 2020
+J. AttardiModern CSS
+https://doi.org/10.1007/978-1-4842-6294-8_4
+
+CSS Chapter 4
+Basic Styling
+
+Property Values
+	-Global Kewords
+		-initial: Uses initial value set by built in browser style-sheet
+		-inherit: Takes avlue used by element's parent
+		-unset: If the property naturally inherits from parent (ie font size)
+			set to inherited value. Otherwise, set to browser default
+	-Shorthand: CSS properties tat can take a single value ie: border-width
+		-The single value is used for top, bottom, left, right
+	-Multiple values: the 4 shorthand equivilant values broken down as individual
+		-To specify unique values for each side of the element, 
+			Use short hand property- give it multipe values
+		-Two values added to shorthand keyword: 
+			first value applied to top and bottom
+			second value applied to left and right
+			border-width: 1px 5px;	
+		-Three border-width: 1px 5px 10px;:
+			first value applied to top
+			second value applies to left and right
+			third value applies to bottom
+			border-width: 1px 5px 10px;
+		-Four values added to shorthand keyword:
+			1st top, 2nd right, 3rd left, 4th bottom
+			border-width: 1px 5px 10px 20px;
+			
+Borders
+	-border shorthand property-
+		combo of color, width, style
+		can be listed in any order
+		.container {
+		border: 5px solid red;
+		}
+	-Border Color:
+		most elements have default invisible border
+		color set with border-color property
+	-Border Width:
+		border thickness set with border-width property
+		can be a value like 3px or
+		predefined values:
+			thin, medium, thick
+	-Border Style:
+		visual appearance of border is set with border-style property
+		default is value none or
+		solid, dotted, dashed bouble, groove, ridge, inset, outset
+	Border-Collapse
+		a border property applied to all table elements
+		controls how borders are preserved or collapsed between adjoining table cells
+		default is seperate, so borders are not combined, every cell has all 4 borders visible
+		set border-collapse to value collapse to view only a single border between cells
+	Border-Radius: gives rounded corners to blocks
+		-circular applied as radius of corner circle in px
+		<style>
+			.rounded-corners {
+				background-color: red;
+				border-radius: 10px;
+				height: 5rem;
+				width: 5rem;
+				}
+		</style>
+		<div class="rounded-corners"></div>
+		-Ellipse applied by specifying each of the two radii
+			-seperated by a slash (unless applying seperate radii for each corner) 
+			-border-radius: 20px / 10px;
+		-4 corners
+			<style>
+				.rounded-corners {
+					background-color: red;
+					border-bottom-right-radius: 10px 20px;
+					border-bottom-left-radius: 5px;
+					border-top-left-radius: 20px 10px;
+					border-top-right-radius: 50%;
+					height: 5rem;
+					width: 5rem;
+				}
+			</style>
+			<div class="rounded-corners"></div>
+			
+Box shadows 
+	-x offset: value must be given
+		when set to zero, shadow spreads and blurs evenly in all directions
+	-Y offset: value must be given
+		when set to zero, shadow spreads and blurs evenly in all directions
+
+	-Blur radius: how far out the shadow is blurred
+		-default zero
+	-Spread radius: how far the shadow extends beyond the elements dimsensions
+		-default zero
+	<style>
+		.shadow {
+			box-shadow: 5px 5px black;
+			background: #CCCCCC;
+			width: 10rem;
+			height: 5rem;
+		}
+	</style>
+	<div class="shadow"></div>
+	-blur radius can be added to blur the shadow
+		box-shadow: 5px 5px 10px black;
+		
+	-spread radius added with blur radius set to zero
+		shadow size grows by the spread radius in all directions
+		 box-shadow: 5px 5px 0 5px black;
+	-blur radius applied for the full rendered shadow 
+		 box-shadow: 5px 5px 10px 5px black;
+
+	-box shadow inside an element vs behind	
+		inset keyword
+		box-shadow: 0 0 25px black inset;
+	-multiple shadows can be added to an element	
+		could be used to apply both inner and outer shadows
+		box-shadow: 0 0 10px 0 black, 0 0 25px red inset;
+		
+Opacity property: controlls transparency
+	- most elements default to transparent background
+	- opacity property applies to the entire element 
+	– background, border, text, images, and any other content in element or its children
+	- takes a number between 0 and 1
+	.inner {
+		background: blue;
+		color: white;
+		height: 8rem;
+		width: 8rem;
+		opacity: 0.5;
+			*background of the outer box partially shows through the inner box and its text
+	
+Hiding Elements
+	-DISPLAY: NONE removes element from the flow of the doc
+		other elements will move to fill the space
+	-VISIBILITY: HIDDEN makes element invisible
+		does not effect the flow of the doc, nothing moves in to fill space
+	-OPACITY: 0 hides element without changing layout
+		can be used to create a subtle fade-in/fade-out effect
