@@ -1,0 +1,40 @@
+
+End Goal: functional, responsive website with accessibility features
+Full Stack
+
+Wireframe
+
+April 23rd Goals:
+-Finish UX design course
+-Finish wireframe for site
+-Finish CSS book
+
+I Client Side
+		
+	Angular
+	
+		CSS: 
+		Routing:
+			Blog
+			Archives
+			Authors
+			Contact
+			
+		HTML: 
+		Logic:
+		Content:
+		Forms:
+
+II Server Side
+	
+	Cloud Services
+	
+		Web Server: 
+			Node.js: serving code to browser
+			Restful services: b/w server and database
+		Database:
+			Metadata tags
+			
+III Testing
+
+
